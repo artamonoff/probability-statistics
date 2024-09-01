@@ -1,0 +1,254 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{amsmath, amsfonts, amsthm, amssymb, amsopn, amscd}
+\usepackage{enumerate}
+\usepackage[mathscr]{eucal}
+
+\usepackage{hyperref}
+\hypersetup{unicode=true,final=true,colorlinks=true}
+
+\title{Seminars on Theory of Probability}
+
+\author{Nikita V. Artamonov}
+
+\begin{document}
+
+\maketitle
+
+\section{Discrete Probability}
+
+\subsection{Sets \& Combinatorial Problems}
+\cite{Schay}: p. 29 Exercise 3.1.1; p. 30 Exercise 3.1.6, 3.1.8;
+p. 35 Exercise 3.2.5, 3.2.6, 3.2.7;
+p. 40 Exercise 3.3.1, 3.3.2, 3.3.4, 3.3.5;
+p. 41 Exercise 3.3.6, 3.3.7, 3.3.8, 3.3.9, 3.3.11;
+p. 50 Exercise 3.5.1, 3.5.2, 3.5.3; p.51 Exercise 3.5.7 
+
+\subsection{Probability Assignments by Combinatorial Methods}
+
+\cite{Schay}: p. 72 Exercise 4.2.1., 4.2.2., 4.2.4., 4.2.5.;
+p. 73 Exercise Exercise 4.2.8., 4.2.9., 4.2.10., 4.2.11.;
+p. 74 Exercise 4.2.12., 4.2.15., 4.2.16.;
+p. 75 Exercise 4.2.17., 4.2.18., 4.2.19., 4.2.22.
+
+\noindent\cite{Meester}: p. 29 Exercise 1.7.3,  1.7.5,
+1.7.7, 1.7.8, 1.7.10;  p. 30 Exercise 1.7.12, 1.7.14, 1.7.18,
+1.7.24(!), 
+
+\noindent\cite{Mittelhammer}: p. 37 Exercise 9
+
+\subsection{Algebra of Events}
+
+\cite{Schay}: p.60  Exercise 4.1.8, 
+
+\noindent\cite{Dekking}: p. 21 Exercise 2.1; p. 22 Exercise 2.7, 2.9;
+p. 23 Exercise 2.11, 2.12
+
+\noindent\cite{Meester}:  p. 28 Exercise 1.7.2; p. 31 Exercise 1.7.25
+
+\noindent\cite{Mittelhammer}: p. 35 Exercise 2; p. 36 Exercise 8;
+p. 37 Exercise 10, 
+
+\subsection{Independence \& Conditional Probabilities}
+
+\cite{Schay}: p .81 Exercise 4.3.1, 4.3.4; p. 82 Exercise 4.3.8, 4.3.9;
+p.88 Exercise 4.4.1; p.89 Exercise 4.4.3, 4.4.4, 4.4.7;
+p.90 Exercise 4.4.8, 4.4.9, 4.4.11, 4.4.12, 4.4.13
+
+\noindent\cite{Dekking}:p. 37 Exercise 3.2, 3.5, p. 38 Exercise 3.9, 3.10
+
+\noindent\cite{Meester}:  p. 32 Exercise 1.7.26, 1.7.28, 1.7.29; 
+p. 32 Exercise 1.7.33.
+
+\noindent\cite{Mittelhammer}: p. 37 Exercise 12, 14
+
+\subsection{The Theorem of Total Probability
+and the Theorem of Bayes}
+
+\cite{Schay}: p. 100 Exercise 4.5.1, 4.5.2,  4.5.3; p.101 Exercise 4.5.6, 4.5.7,
+4.5.8, 4.5.9; p.102 Exercise 4.5.10, 4.5.11, 4.5.12;
+p. 114 Exercise 5.1.12, 
+
+\noindent\cite{Meester}:  p. 30 Exercise 1.7.17; p. 32 Exercise 1.7.31;
+p. 33 Exercise 1.7.35
+
+\noindent\cite{Mittelhammer}: p. 40 Exercise 24, 
+
+\section{Discrete Random Variables}
+
+\cite{Schay}: p.112, Exercise 5.1.1, 5.1.2, 5.1.3, 5.1.4; 
+p. 113 Exercise 5.1.5, 5.1.6, 5.1.7, 5.1.9, 5.1.10, 5.1.11
+
+\noindent\cite{Dekking}: p. 51 Exercise 4.2, 4.3
+
+\noindent\cite{Meester}: p.  64 Exercise 2.7.1, 2.7.2; 
+p. 65 Exercise 2.7.6, 2.7.7.(a), 2.7.9 (a), 2.7.10;
+p. 66 Exercise 2.7.12; p. 67 Exercise 2.7.21; 
+p. 68 Exercise 2.7.23, 2.7.24, 2.7.25, 2.7.28;
+p. 70 Exercise 2.7.41
+
+\section{Continuous Random Variables}
+
+\cite{Schay}: p. 121 Exercise 5.2.1, 5.2.2, 5.2.3, 5.2.4,
+
+\noindent\cite{Dekking}: p. 68 Exercise 5.1, 5.2, 5.3, 5.5, 5.7
+
+\noindent\cite{Meester}:  p.131 Exercise 5.12.2,  5.12.3, 5.12.4, 5.12.5,
+5.12.6, 5.12.7,
+
+\noindent\textbf{\#1} Consider a density ($\lambda>0$)
+\[
+	f(x)=\begin{cases} 
+	c\exp(-\lambda x), & x\geq0 \\ 0, & x<0
+	\end{cases}
+\]
+Find
+\begin{enumerate}
+	\item the constant $c$
+	\item the distribution function $F(x)$
+	\item $\mathsf{E}X$ and $\mathsf{Var}(X)$
+	\item quantile $Q_p$, median, 1st \& 3rd quartiles
+\end{enumerate}
+
+\noindent\textbf{\#2} Consider a density ($\lambda>0$)
+\[
+	f(x)=\begin{cases} 
+	cx^\lambda, & 0\leq x\leq1 \\ 0, & \text{otherwise}
+	\end{cases}
+\]
+Find
+\begin{enumerate}
+	\item the constant $c$
+	\item the distribution function $F(x)$
+	\item the following probabilities
+	\begin{align*}
+	&\mathsf{P}(X<\frac12) & &\mathsf{P}(X\geq\frac13) & &\mathsf{P}(X\leq\frac14)
+	\end{align*}
+	\item $\mathsf{E}X$ and $\mathsf{Var}(X)$
+	\item quantile $Q_p$, median, 1st \& 3rd quartiles
+\end{enumerate}
+
+\noindent\textbf{\#3} Consider a density ($\mu,\lambda>0$)
+\[
+	f(x)=\begin{cases} 
+	cx^\mu(1-x^\lambda), & 0\leq x\leq1 \\ 0, & \text{otherwise}
+	\end{cases}
+\]
+Find
+\begin{enumerate}
+	\item the constant $c$
+	\item the distribution function $F(x)$
+	\item the following probabilities
+	\begin{align*}
+	&\mathsf{P}(X<\frac12) & &\mathsf{P}(X\geq\frac13) & &\mathsf{P}(X\leq\frac14)
+	\end{align*}
+	\item $\mathsf{E}X$ and $\mathsf{Var}(X)$
+%	\item quantile $Q_p$, median, 1st \& 3rd quartiles
+\end{enumerate}
+
+\section{Standard Distributions}
+
+\noindent\textbf{\#1} Let \(X\sim U[-1,1]\). Calculate the probabilities
+\begin{align*}
+	&\mathsf{P}(X<-\frac12) & &\mathsf{P}(X\geq\frac13) & &\mathsf{P}(-\frac13\leq X\leq\frac34)
+\end{align*}
+
+\noindent\textbf{\#2} Let \(X\sim U[0,2]\). Calculate the probabilities
+\begin{align*}
+	&\mathsf{P}(X<1.5) & &\mathsf{P}(X\geq\frac13) & &\mathsf{P}(\frac15\leq X\leq 1.5)
+\end{align*}
+
+\noindent\textbf{\#3} Let \(Z\sim N(0,1)\). 
+\begin{enumerate}
+	\item Calculate the probabilities
+	\begin{align*}
+	&\mathsf{P}(Z<1.5) & &\mathsf{P}(Z\geq\frac13) & &\mathsf{P}(-1\leq Z\leq 1)
+	\end{align*}
+	\item Found $z_1$ s.t. \(\mathsf{P}(Z<z_1)=0.975\) (5\%-critical value)
+	\item Found $z_2$ s.t. \(\mathsf{P}(Z<z_2)=0.95\) (10\%-critical value)
+	\item Found $z_3$ s.t. \(\mathsf{P}(Z<z_3)=0.995\) (1\%-critical value)
+\end{enumerate}
+
+\noindent\textbf{\#3} Let \(X^2\sim\chi^2_2\). 
+\begin{enumerate}
+	\item Calculate the probabilities
+	\begin{align*}
+	&\mathsf{P}(X^2<1.5) & &\mathsf{P}(X^2\geq 1) & &\mathsf{P}( X^2\leq 2)
+	\end{align*}
+	\item Found $x_1$ s.t. \(\mathsf{P}(X^2<x_1)=0.9\) (10\%-critical value)
+	\item Found $x_2$ s.t. \(\mathsf{P}(X^2<x_2)=0.95\) (5\%-critical value)
+	\item Found $x_3$ s.t. \(\mathsf{P}(X^2<x_3)=0.99\) (1\%-critical value)
+\end{enumerate}
+
+\noindent\textbf{\#4} Let \(X^2\sim\chi^2_8\). 
+\begin{enumerate}
+	\item Calculate the probabilities
+	\begin{align*}
+	&\mathsf{P}(X^2<1.5) & &\mathsf{P}(X^2\geq 1) & &\mathsf{P}( X^2\leq 2)
+	\end{align*}
+	\item Found $x_1$ s.t. \(\mathsf{P}(X^2<x_1)=0.9\) (10\%-critical value)
+	\item Found $x_2$ s.t. \(\mathsf{P}(X^2<x_2)=0.95\) (5\%-critical value
+	\item Found $x_3$ s.t. \(\mathsf{P}(X^2<x_3)=0.99\) (1\%-critical value)
+\end{enumerate}
+
+\noindent\textbf{\#5} Let \(T\sim t_{10}\). 
+\begin{enumerate}
+	\item Calculate the probabilities
+	\begin{align*}
+	&\mathsf{P}(T<1.5) & &\mathsf{P}(T\geq\frac13) & &\mathsf{P}(-1\leq T\leq 1)
+	\end{align*}
+	\item Found $t_1$ s.t. \(\mathsf{P}(T<t_1)=0.975\) (5\%-critical value)
+	\item Found $t_2$ s.t. \(\mathsf{P}(T<t_2)=0.95\) (10\%-critical value)
+	\item Found $t_3$ s.t. \(\mathsf{P}(T<t_3)=0.995\) (1\%-critical value)
+\end{enumerate}
+
+\noindent\textbf{\#6} Let \(f\sim F_{3,20}\). 
+\begin{enumerate}
+	\item Calculate the probabilities
+	\begin{align*}
+	&\mathsf{P}(f<1.5) & &\mathsf{P}(f\geq 1) & &\mathsf{P}( f\leq 2)
+	\end{align*}
+	\item Found $F_1$ s.t. \(\mathsf{P}(f<F_1)=0.9\) (10\%-critical value)
+	\item Found $F_2$ s.t. \(\mathsf{P}(f<F_2)=0.95\) (5\%-critical value
+	\item Found $F_3$ s.t. \(\mathsf{P}(f<F_3)=0.99\) (1\%-critical value)
+\end{enumerate}
+
+
+\section{Mathematical Statistics}
+
+\subsection{Hypothesis testing}
+
+\cite{Schay}: p. 314, Exercise 8.4.3, 8.4.4
+
+
+\begin{thebibliography}{99}
+
+\bibitem{Schay} Géza Schay, <<Introduction to Probability with Statistical Applications>>, 2 ed
+Birkhäuser, 2016
+
+\bibitem{Dekking} F.M. Dekking, C. Kraaikamp, H.P. Lopuhaä, L.E. Meester, 
+<<A Modern Introduction to Probability and Statistics>>, 
+Springer-Verlag, 2005
+
+\bibitem{Meester} Ronald Meester, <<A Natural Introduction to Probability Theory>>, 2 ed,
+Birkhäuser, 2008
+
+\bibitem{Mittelhammer} Ron C. Mittelhammer, <<Mathematical Statistics for Economics and 
+Business>>, 2 ed, Springer-Verlag, 2013
+
+%\bibitem{Robbiano} Lorenzo Robbiano, <<Linear Algebra for everyone>>,
+%Springer Verlag, 2011
+%
+%\bibitem{Golan} Jonathan S. Golan, <<The Linear Algebra a Beginning Graduate Student
+%Ought to Know>>, Springer Verlag, 2007
+%
+%\bibitem{Byrne} Charles L. Byrne, <<Applied and Computational Linear Algebra:
+%A First Course>>
+
+\end{thebibliography}
+
+\end{document}

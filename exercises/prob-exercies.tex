@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+
+\usepackage{mathtext}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+%\usepackage{draftwatermark}
+%
+%\SetWatermarkText{\copyright Артамонов Н.В.}
+
+%\usepackage{TimesC}
+
+\usepackage{amsmath, amsfonts, amsthm, amssymb, amsopn, amscd}
+\usepackage{enumerate, longtable}
+\usepackage[mathscr]{eucal}
+
+\usepackage{hyperref}
+\hypersetup{unicode=true,final=true,colorlinks=true}
+
+\input{probability-defs.tex}
+
+\theoremstyle{remark}
+\newtheorem{exercise}{}[section]
+%\newtheorem{examine}{}
+\renewcommand{\theexercise}{\textbf{\textnumero \arabic{exercise}}}
+
+\title{Задачи по Теории вероятностей и математической статистике}
+\author{Артамонов Н.В.}
+%\date{весна 2014}
+
+\begin{document}
+
+\maketitle
+
+\markright{}\tableofcontents
+
+\input{discrete-rv.tex}
+
+\input{continuous-rv.tex}
+
+\end{document}

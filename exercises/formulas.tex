@@ -1,0 +1,40 @@
+% !TEX root = prob-exercises.tex
+
+\section{Основные формулы}
+
+\subsection{Основы теории вероятностей}
+
+\subsection{Дискретные случайные величины}
+
+\subsection{Непрерывные случайные величины}
+
+Пусть \(X\) -- непрерывной распределённая случайная величина. Функция распределения \(F\) и плотность \(f\)
+определяются как
+\begin{align*}
+	F(x)&=\Prob(X\leq x) & f(x)&=F'(x) & x&\in\R
+\end{align*}
+Свойства функции распределения:
+\begin{align*}
+	0&\leq F(x)\leq1 & &F \uparrow & 
+	\lim_{x\to-\infty}F(x)&=0 & \lim_{x\to+\infty}F(x)&=1
+\end{align*}
+Свойства плотности
+\begin{align*}
+	f(x)&\geq 0 & \int_\R f(t)dt&=1 & F(x)&=\int_{-\infty}^x f(t)dt
+\end{align*}
+Вычисление вероятностей
+\begin{align*}
+	\left.\begin{aligned}
+	&\Prob(a<X<b) \\ & \Prob(a\leq X\leq b) \\ 
+	& \Prob(a<X\leq b) \\ &\Prob(a\leq X< b)
+	\end{aligned}
+	\right\}&=F(b)-F(a)=\int_a^b f(t)dt\\
+	\left.\begin{aligned}
+	&\Prob(X<b) \\ & \Prob(X\leq b)
+	\end{aligned}
+	\right\}&=F(b)=\int_{-\infty}^b f(t)dt\\
+	\left.\begin{aligned}
+	&\Prob(a<X) \\ & \Prob(a\leq X)
+	\end{aligned}
+	\right\}&=1-F(a)=\int_{a}^{+\infty} f(t)dt
+\end{align*}

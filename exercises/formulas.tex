@@ -4,9 +4,44 @@
 
 \subsection{Основы теории вероятностей}
 
+Комбинаторика:
+\begin{itemize}
+	\item Число перестановок \(P_n=n!\)
+	\item Число сочетаний \(C_n^k=\binom{n}{k}=\frac{n!}{k!(n-k)!}\)
+	\item Число размещений \(A_n^k=\frac{n!}{(n-k)!}\)
+\end{itemize}
+<<Классическое>> определение вероятностей (модель равновероятных элементарных исходов)
+\[
+	\Prob(A)=\frac{\#(A)}{\#(\Omega)}
+\]
+Формула суммы событий
+\[
+	\Prob(A+B)=\Prob(A)+\Prob(A)-\Prob(AB)
+\]
+Условная вероятность \(B\) при условии (наблюдения) \(A\)
+\begin{align*}
+	\Prob(B|A)&=\frac{\Prob(AB)}{\Prob(A)} & \Prob(A)&\ne0
+\end{align*}
+
+Пусть \(\{H_i\}_{i=1}^n\) -- полная группа событий (гипотезы).
+Тогда для произвольного события  \(A\)
+\begin{itemize}
+	\item Формула полной вероятности
+	\[
+		\Prob(A)=\sum_{i=1}^n \Prob(A|H_i)\Prob(H_i)
+	\]
+	\item Формула Байеса
+	\begin{align*}
+		\Prob(H_i|A)&=\frac{\Prob(A|H_i)\Prob(H_i)}{\Prob(A)} &
+		i&=1,\ldots,n
+	\end{align*}
+\end{itemize}
+
 \subsection{Дискретные случайные величины}
 
 \subsection{Непрерывные случайные величины}
+
+\subsubsection{Общие распределения}
 
 Пусть \(X\) -- непрерывной распределённая случайная величина. Функция распределения \(F\) и плотность \(f\)
 определяются как
@@ -46,9 +81,78 @@
 
 Момент порядка \(k\in\N\)  (\textbf{если интеграл сходится!})
 \[
-	\Exp(X^k)=\int_\R xf(x)dx
+	\Exp(X^k)=\int_\R x^kf(x)dx
 \]
 Дисперсия (если конечен момент второго порядка!)
 \[
 	\Var(X)=\Exp(X^2)-(\Exp(X))^2\geq0
 \]
+
+\subsubsection{Стандартные распределения}
+
+\paragraph{Нормальное (гауссово) распределение}
+
+Стандартное гауссово или нормальное распределение \(\Gauss(0,1)\):
+\begin{itemize}
+	\item плотность и функция распределения
+	\begin{align*}
+		\phi(x)&=\frac{1}{\sqrt{2\pi}}\exp(-x^2/2) &
+		\Phi(x)&=\int^x_{-\infty}\phi(t)dt
+	\end{align*}
+	\item Математическое ожидание и дисперсия
+	\begin{align*}
+		\Exp(X)&=0 & \Var(X)&=1
+	\end{align*}
+\end{itemize}
+Общее нормальное распределение \(\Gauss(\mu,\sigma^2)\)
+\begin{itemize}
+	\item плотность и функция распределения
+	\begin{align*}
+		f(x)&=\frac{1}{\sigma}\phi\left(\frac{x-\mu}{\sigma}\right)=
+		\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right) \\
+		F(x)&=\Phi\left(\frac{x-\mu}{\sigma}\right)
+	\end{align*}
+	\item Математическое ожидание и дисперсия
+	\begin{align*}
+		\Exp(X)&=\mu & \Var(X)&=\sigma^2
+	\end{align*}
+\end{itemize}
+
+\paragraph{Равномерное распределение} \(U[a,b]\) на отрезке
+\begin{itemize}
+	\item плотность и функция распределения
+	\begin{align*}
+		f(x)&=\begin{cases}
+			\frac{1}{b-a}, & a\leq x\leq b\\
+			0, & \text{иначе}
+		\end{cases} \\
+		F(x)&=\begin{cases}
+			0, & x< a\\
+			\frac{x-a}{b-a}, & a\leq x\leq b\\
+			1, & x>b
+		\end{cases}
+	\end{align*}
+	\item Математическое ожидание и дисперсия
+	\begin{align*}
+		\Exp(X)&=\frac{a+b}{2} & \Var(X)&=\frac{(b-a)^2}{12}
+	\end{align*}
+\end{itemize}
+
+\paragraph{Экспоненциальное распределение} \(Exp(\lambda)\) (параметр \(\lambda>0\))
+\begin{itemize}
+	\item плотность и функция распределения
+	\begin{align*}
+		f(x)&=\begin{cases}
+			\lambda \exp(-\lambda x), & x\geq0\\
+			0, & x<0
+		\end{cases} \\
+		F(x)&=\begin{cases}
+			1-\exp(-\lambda x), & x\geq0 \\
+			0, & x<0
+		\end{cases}
+	\end{align*}
+	\item Математическое ожидание и дисперсия
+	\begin{align*}
+		\Exp(X)&=\frac{1}{\lambda} & \Var(X)&=\frac{1}{\lambda^2}
+	\end{align*}
+\end{itemize}

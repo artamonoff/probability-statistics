@@ -29,12 +29,12 @@ __Замечание__: Вероятности $P(a\leq X\leq b)=P(a<X<b)=P(a<X\
 |Гауссово/нормальное|$N(\mu,\sigma^2)$|`norm(loc=0,scale=1)`|loc = $\mu$, scale = $\sigma$|
 |Равномерное на отрезке|$U[a,b]$|`uniform(loc=0,scale=1)`|loc = $a$, scale = $b-a$|
 |Экспоненциальное|$Exp(\lambda)$|`expon(loc=0,scale=1)`|loc = 0, scale = $1/\lambda$|
-|Хи-квадрат|$\chi^2_k$|`chi2(df)`|df=$k$|
-|t-распределение (Стьюдента)|$t_k$|`t(df)`|df=$k$|
+|Хи-квадрат|$\chi^2_k$|`chi2(df)`|df = $k$|
+|t-распределение (Стьюдента)|$t_k$|`t(df)`|df = $k$|
 |F-распределение (Фишера)|$F_{k1, k2}$|`f(dfn, dfd)`|dfn = $k1$, dfd = $k2$|
-|Логистическое|$\Lambda$|`logistic(oc=0,scale=1)`|loc=0, scale=1|
+|Логистическое|$\Lambda$|`logistic(oc=0,scale=1)`|loc = 0, scale = 1|
 |Бета|$B(\alpha,\beta)$|`beta(a,b)`|a = $\alpha$, b = $\beta$|
-|Гамма|$\Gamma(k)$|`gamma(a)`|a=$k$|
+|Гамма|$\Gamma(k)$|`gamma(a)`|a = $k$|
 
 ## Дискретные распределения
 
@@ -64,8 +64,8 @@ __Замечание__: Вероятности
 
 |Распределение|Обозначение|`scipy.stats`|Параметры|
 |-|-|-|-|
-|Биномиальное|$Bimon(n,p)$|`binom(n,p)`|n, p|
+|Биномиальное|$Bimon(n,p)$|`binom(n,p)`|n = $n$, p = $p$|
 |Гипергеометрическое|$Hypergeom(N, D, n)$|`hypergeom(M, n, N)`|M = $N$, n = $D$, N = $n$|
 |Пуассона|$Poisson(\mu)$|`poisson(mu)`|mu = $\mu$|
-|Отрицательное биномиальное|$NB(n,p)$|`nbinom(n,p)`|n, p|
-|Геометрическое|$Geom(p)$|`geom(p)`|p|
+|Отрицательное биномиальное|$NB(n,p)$|`nbinom(n,p)`|n = $n$, p = $p$|
+|Геометрическое|$Geom(p)$|`geom(p)`|p = $p$|

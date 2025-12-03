@@ -32,7 +32,7 @@ __Замечание__: Вероятности $P(a\leq X\leq b)=P(a<X<b)=P(a<X\
 |Хи-квадрат|$\chi^2_k$|`chi2(df)`|df = $k$|
 |t-распределение (Стьюдента)|$t_k$|`t(df)`|df = $k$|
 |F-распределение (Фишера)|$F_{k1, k2}$|`f(dfn, dfd)`|dfn = $k1$, dfd = $k2$|
-|Логистическое|$\Lambda$|`logistic(oc=0,scale=1)`|loc = 0, scale = 1|
+|Логистическое|$\Lambda$|`logistic(loc=0,scale=1)`|loc = 0, scale = 1|
 |Бета|$B(\alpha,\beta)$|`beta(a,b)`|a = $\alpha$, b = $\beta$|
 |Гамма|$\Gamma(k)$|`gamma(a)`|a = $k$|
 

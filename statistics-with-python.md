@@ -2,6 +2,8 @@
 
 ## Пакет `pandas`
 
+Импорт библиотеки `import pandas as pd`
+
 |Метод `pandas`|Описание|
 |-|-|
 |`.read_csv(filepath)`|Импорт данных из файла в формате CSV|

@@ -17,6 +17,8 @@
 |$Binom(n,p)$|БИНОМ.РАСП.ДИАП($n,p,k_1,k_2$)|$P(k_1\leq X\leq k_2)$|
 |$Hypergeom(N,D,n)$|ГИПЕРГЕОМ.РАСП($k,n,D,N,0$)|$P(X=k)$|
 |$Hypergeom(N,D,n)$|ГИПЕРГЕОМ.РАСП($k,n,D,N,1$)|$P(X\leq k)$|
+|$Pois(\lambda)$|ПУАССОН.РАСП($k,\lambda,0$)|$P(X=k)$|
+|$Pois(\lambda)$|ПУАССОН.РАСП($k,\lambda,1$)|$P(X\leq k)$|
 
 ## Непрерывные распределения
 

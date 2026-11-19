@@ -24,17 +24,17 @@ __Замечание__: Вероятности $P(a\leq X\leq b)=P(a<X<b)=P(a<X\
 
 ### Основные непрерывные распределения
 
-|Распределение|Обозначение|`scipy.stats`|Параметры|
-|-|-|-|-|
-|Гауссово/нормальное|$N(\mu,\sigma^2)$|`norm(loc=0,scale=1)`|loc = $\mu$, scale = $\sigma$|
-|Равномерное на отрезке|$U[a,b]$|`uniform(loc=0,scale=1)`|loc = $a$, scale = $b-a$|
-|Экспоненциальное|$Exp(\lambda)$|`expon(loc=0,scale=1)`|loc = 0, scale = $1/\lambda$|
-|Хи-квадрат|$\chi^2_k$|`chi2(df)`|df = $k$|
-|t-распределение (Стьюдента)|$t_k$|`t(df)`|df = $k$|
-|F-распределение (Фишера)|$F_{k1, k2}$|`f(dfn, dfd)`|dfn = $k1$, dfd = $k2$|
-|Логистическое|$\Lambda$|`logistic(loc=0,scale=1)`|loc = 0, scale = 1|
-|Бета|$B(\alpha,\beta)$|`beta(a,b)`|a = $\alpha$, b = $\beta$|
-|Гамма|$\Gamma(k)$|`gamma(a)`|a = $k$|
+|Распределение|Обозначение|`scipy.stats`|Параметры|Импорт в Python|
+|-|-|-|-|-|
+|Гауссово/нормальное|$N(\mu,\sigma^2)$|`norm(loc=0,scale=1)`|loc = $\mu$, scale = $\sigma$|`from scipy.stats import norm`|
+|Равномерное на отрезке|$U[a,b]$|`uniform(loc=0,scale=1)`|loc = $a$, scale = $b-a$|`from scipy.stats import uniform`|
+|Экспоненциальное|$Exp(\lambda)$|`expon(loc=0,scale=1)`|loc = 0, scale = $1/\lambda$|`from scipy.stats import expon`|
+|Хи-квадрат|$\chi^2_k$|`chi2(df)`|df = $k$|`from scipy.stats import chi2`|
+|t-распределение (Стьюдента)|$t_k$|`t(df)`|df = $k$|`from scipy.stats import t`|
+|F-распределение (Фишера)|$F_{k1, k2}$|`f(dfn, dfd)`|dfn = $k1$, dfd = $k2$|`from scipy.stats import f`|
+|Логистическое|$\Lambda$|`logistic(loc=0,scale=1)`|loc = 0, scale = 1|`from scipy.stats import logistic`|
+|Бета|$B(\alpha,\beta)$|`beta(a,b)`|a = $\alpha$, b = $\beta$|`from scipy.stats import beta`|
+|Гамма|$\Gamma(k)$|`gamma(a)`|a = $k$|`from scipy.stats import gamma`|
 
 __Замечание__: для распределений указаны значения параметров по умолчанию 
 
@@ -64,10 +64,10 @@ __Замечание__: Вероятности
 
 ### Основные дискретные распределения
 
-|Распределение|Обозначение|`scipy.stats`|Параметры|
-|-|-|-|-|
-|Биномиальное|$Bimon(n,p)$|`binom(n,p)`|n = $n$, p = $p$|
-|Гипергеометрическое|$Hypergeom(N, D, n)$|`hypergeom(M, n, N)`|M = $N$, n = $D$, N = $n$|
-|Пуассона|$Poisson(\mu)$|`poisson(mu)`|mu = $\mu$|
-|Отрицательное биномиальное|$NB(n,p)$|`nbinom(n,p)`|n = $n$, p = $p$|
-|Геометрическое|$Geom(p)$|`geom(p)`|p = $p$|
+|Распределение|Обозначение|`scipy.stats`|Параметры|Импорт в Python|
+|-|-|-|-|-|
+|Биномиальное|$Bimon(n,p)$|`binom(n,p)`|n = $n$, p = $p$|`from scipy.stats import binom`|
+|Гипергеометрическое|$Hypergeom(N, D, n)$|`hypergeom(M, n, N)`|M = $N$, n = $D$, N = $n$|`from scipy.stats import hypergeom`|
+|Пуассона|$Poisson(\mu)$|`poisson(mu)`|mu = $\mu$|`from scipy.stats import poisson`|
+|Отрицательное биномиальное|$NB(n,p)$|`nbinom(n,p)`|n = $n$, p = $p$|`from scipy.stats import nbinom`|
+|Геометрическое|$Geom(p)$|`geom(p)`|p = $p$|`from scipy.stats import geom`|
